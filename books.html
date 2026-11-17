@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB4C</title>
+</head>
+<body>
+    <h1>Book Information</h1>
+
+    <script>
+        // JSON data
+        const booksData = {
+            "books": [
+                {
+                    "title": "The Great Gatsby",
+                    "author": "F. Scott Fitzgerald",
+                    "publicationYear": 1925,
+                    "genres": ["Fiction", "Classics"]
+                },
+                {
+                    "title": "To Kill a Mockingbird",
+                    "author": "Harper Lee",
+                    "publicationYear": 1960,
+                    "genres": ["Fiction", "Coming-of-Age"]
+                }
+            ]
+        };
+
+        console.log("First Book Title: " + booksData.books[0].title);
+        console.log("Second Book Author: " + booksData.books[1].author);
+
+        booksData.books.forEach(function(book) {
+            console.log(book.genres);
+        });
+    </script>
+</body>
+</html>
